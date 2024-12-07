@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arogyam Healthcare</title>
+    <link rel="stylesheet" href="mpc_style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .footer {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-column {
+            flex: 1;
+            margin: 10px;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            border-bottom: 2px solid white;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .footer-column ul li {
+            margin: 5px 0;
+        }
+        
+        .footer-column ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        
+        .footer-contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .footer-contact a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Existing CSS styles */
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+.footer-section .search-box {
+    display: flex;
+    align-items: center;
+}
+
+.footer-section .search-box input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+
+.footer-section .search-box button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f09d42;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer-bottom {
+    background-color: #001f48;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom .footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom .footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom .footer-pricing a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-bottom .footer-advisory {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer-bottom .footer-contact {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.footer-bottom .footer-contact img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+.icon:hover{
+    color: lightblue;
+
+}
+
+        
+    </style>
+    <style>
+        .container1{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .container2{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .container3{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .card-Text {
+            display: none; /* Initially hide the paragraph content */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <input type="checkbox" id="emergency">
+        <div class="header">
+            <div class="hbox1">
+                <div class="hlogo"></div>
+                <div class="htxt">Arogyam <br>Healthcare</div>
+            </div>
+            <div class="hbox2">
+                
+                <div class="search"><i class="fa-solid fa-magnifying-glass"></i><br>Search</div>
+                <div class="emerg"><label for="emergency"><i class="fa-solid fa-suitcase-medical"></i><br></label>Emergency</div>
+            </div>
+        </div>
+               
+        <b><hr style="position: sticky; top: 122px"></b>
+
+        <div class="quote">
+            <div class="qtxt">"Create healthy habits, not resctrictions."</div>
+            <div class="qlogo"></div>
+        </div>
+
+        <div class="emerg_box">
+            <label for="emergency"><i class="fa-solid fa-xmark"></i></label>
+            <table>
+                <tr>
+                    <td>Delhi/NCR<br>01140554055</td>
+                    <td>Mohali<br>7710777107</td>
+                </tr>
+                <tr>
+                    <td>Dehradun<br>01357193333</td>
+                    <td>Bathinda<br>01645212039</td>
+                </tr>
+                <tr>
+                    <td>Mumbai<br>02261347777</td>
+                    <td>Nagpur<br>07127120000</td>
+                </tr>
+                <tr>
+                    <td>Lucknow<br>05226780001</td>
+                    <td>Brain Attack<br>9910204023</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="appointment">
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input type="text" style="background-color: rgb(224, 219, 219); height: 50px;" class="form-control" placeholder="Search for Doctor or Speciality" aria-label="Username" aria-describedby="addon-wrapping">
+            </div> 
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-location-dot"></i></span>
+                <input type="text" style="background-color: rgb(224, 219, 219); height: 50px;" class="form-control" placeholder="Select location" aria-label="Username" aria-describedby="addon-wrapping">
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <a href="#"><button class="btn btn-primary" style="width: 250px; height: 60px;" type="button">Book an Appointment</button></a>
+            </div>
+        </div>
+
+        <br>
+                
+        <div class="about">
+            <div class="abox1">
+                <hr style="font-weight:900;">
+                <h2 style="text-decoration: underline;">About Us</h2>
+                
+                <p>Welcome to <b>Arogyam Healthcare</b>, <span style="color: rgb(17, 17, 200);">your partner in health and wellness.</span></p>
+                <p>We are committed to providing comprehensive, high-quality healthcare servises to all individuals of all ages.
+                    Our dedicated team of healthcare professionals is passionate about delivering compassionate care and 
+                    promoting optimal health.
+                </p>
+                <p>Arogyam healthcare is a modern healthcare facility equipped with state-of-the-art technology and a patient-centric
+                    approach.We believe in building strong relationships with our patients, understanding their unique needs and 
+                    tailoring are services accordingly. Our goal is to empower you to take control of your health and
+                    live a fulfilling life. 
+                </p>
+                <p>Our Features are
+                    <ul>
+                        <li>Preventive Care</li>
+                        <li>Specialised Consultations</li>
+                        <li>Emergency Care</li>
+                        <li>Wellness Programs</li>
+                        <li>Latest medical equipments</li>
+                        <li>Personalised treatment plans</li>
+                        <li>Comfortable and welcoming environment</li>
+                    </ul>
+                </p>
+            </div>
+            <div class="poster"></div>
+        </div>
+
+        <hr style="font-weight:900;">
+
+        <h3 style="text-decoration: underline; padding: 25px;">Specialised Facilities</h3>
+        <ul>
+            <li>It is a premium feature,which enables our users and patients to access premium hospital based facilities.</li>
+            <li>This is an initiative to register and access features which includes priority based AI Diagnostics, priority online booking, special discounts, Health Tracker and much more. </li>
+            <li>
+                This will also lead to a personlised AI based health tracker, that will monitor vitals like, Sleep pattern, home based remedies etc. </li>
+            <li>Second Opinion seeker, AI-powered Symptom Checker, Cost Estimators are there, which will enhance user experience.</li>
+        </ul>
+        <a href="membership.html"><button class="btn btn-primary" style="width: 300px; height: 80px; margin-left: 25px;" type="button">Join our Membership</button></a>
+
+        <br>
+
+        <hr style="font-weight:900;">
+        
+        <h3 style="text-decoration: underline; padding: 25px;">Discover Our Doctors</h3>
+        <br>
+
+        <div class="card_box">
+            
+            <div class="card" style="width: 400px;">
+                <img src="doc1.jpeg" class="card-img-top" alt="doc1">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr.R.S.Gupta</strong></h5>
+                  <p class="card-text"><br><b>Director and Chief</b>
+                    <br> Male, 35+ years of Excellence
+                    <ul>
+                    <li>Member of the Royal <br>College of Physicians<br> London, UK</li>
+                    <li>Gold medalist, M.A.M.C. <br> New Delhi</li>
+                    <li>Internal Medicine, <br>Immunology<br> & Gastroenterology </li>
+                    </ul>
+                  </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc2.jpeg" class="card-img-top" alt="doc2">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr.Subhash Chaturvedi</strong></h5>
+                  <p class="card-text"><br><b>Chairman-Cardiology</b>
+                    <br> Male, 33+ years of Excellence
+                    <ul>
+                    <li>Member of Cardiology <br>Society of India</li>
+                    <li>Sujoy B.Roy Young <br>Investigator Award, <br> Cardiological Society <br>of India</li>
+                    <li>Heart Diseases, Coroanary<br> Endovascular Interventions </li>
+                    </ul>
+                 </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc3.jpeg" class="card-img-top" alt="doc3">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr. Vinni Kapoor</strong></h5>
+                  <p class="card-text"><br><b>Chairman-Cancer Care</b>
+                    <br> Female, 27+ years of Excellence
+                    <ul>
+                    <li>President, Oncology Forum</li>
+                    <li>M.B.B.S. & M.S.<br>G.S.V.M. Medical <br>College, Kanpur</li>
+                    <li>Robotic Surgery, <br>Breast Cancer <br> Cancer Care</li>
+                    </ul>
+                 </p>
+                 <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc4.jpeg" class="card-img-top" alt="doc4">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr.Pradeep Chaudhary</strong></h5>
+                  <p class="card-text"><br><b>Diector-Laproscopy and <br>Surgical Specialist</b>
+                    <br> Male, 25+ years of Excellence
+                    <ul>
+                    <li>President-IFSO, <br>Asia Pacific Chapter</li>
+                    <li>FMAS, FALS, FIAGES <br>FRCS (LONDON) </li>
+                    <li>More than 10,000 <br>Hernia surgery,<br> First to perform MAFT</li>
+                    </ul>
+                 </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc5.jpeg" class="card-img-top" alt="doc5">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr.Sudha Sharma</strong></h5>
+                  <p class="card-text"><br><b>Chairman-Gynecology<br> Department</b>
+                    <br> Female, 30+ years of Excellence
+                    <ul>
+                    <li>Dean Academics- Dept. of <br>Oncology, AIIMS, New Delhi</li>
+                    <li>Emeritus- ASCO</li>
+                    <li>Gynecologic Oncology<br> and C-section Specialist</li>
+                    </ul>
+                    </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc6.jpeg" class="card-img-top" alt="doc6">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr. Vijay Kohli</strong></h5>
+                  <p class="card-text"><br><b>Director-Urology, Renal</b>
+                    <br> Male, 25+ years of Excellence
+                    <ul>
+                    <li>Member at International <br>Science Congress Society</li>
+                    <li>DNB(Urology), PGIMER <br> Chandigarh</li>
+                    <li>Kidney Transplant, Urology,<br>Robotic Surgery</li>
+                    </ul>
+                    </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc7.jpeg" class="card-img-top" alt="doc7">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr.Balbir Dosanjh</strong></h5>
+                  <p class="card-text"><br><b>Chairman-Orthopaedics <br>&Joint Replacement</b>
+                    <br> Male, 31+ years of Excellence
+                    <ul>
+                    <li>President, Anthroplasty<br>Society in Asia</li>
+                    <li>Dsc. Amity University,<br> Noida</li>
+                    <li>Sports Injury, Anthroscopy<br>Robotic Surgery</li>
+                    </ul>
+                 </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc8.jpeg" class="card-img-top" alt="doc8">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr. Meenu Walia</strong></h5>
+                  <p class="card-text"><br><b>Chairman-Neurosurgery <br>& Neurospine</b>
+                    <br> Female, 22+ years of Excellence
+                    <ul>
+                    <li>Member of American Ass. of<br>Neurological Surgeons</li>
+                    <li>MBBS and MS, A.F.M.C.<br>Pune</li>
+                    <li>Brain Tumour Surgery,<br>Image Guided Surgery</li>
+                    </ul>
+                 </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc9.jpeg" class="card-img-top" alt="doc9">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr.Neeru Parashar</strong></h5>
+                  <p class="card-text"><br><b>Director-Pulmonology</b>
+                    <br> Female, 25+ years of Excellence
+                    <ul>
+                    <li>Pediatric Pulmonolgy, <br>Royal Brompton <br> Hospital, London</li>
+                    <li>MBBS and M.D., JN Medical<br>College, Aligarh</li>
+                    <li>Pulmonology,<br>Lungs related Issues</li>
+                    </ul>
+                 </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="doc10.jpeg" class="card-img-top" alt="doc10">
+                <div class="card-body">
+                  <h5 class="card-title"><strong>Dr. Sanjay Sachdeva</strong></h5>
+                  <p class="card-text"><br><b>Head- ENT</b>
+                    <br> Male, 20+ years of Excellence
+                    <ul>
+                    <li>Life Member, Associatiom of <br> Otalaryngology of India</li>
+                    <li>M.B.B.S., M.A.M.C. <br> New Delhi</li>
+                    <li>Cochlear Implant Surgery,<br>OSAS Surgery</li>
+                    </ul>
+                 </p>
+                  <a href="#" class="btn btn-primary">Book an Appointment</a>
+                </div>
+            </div>
+        </div> 
+        <br>
+        
+        <div class="procedure"><iframe class="pframe" src="procedures.html"></iframe></div>
+
+        <hr style="font-weight:900;">
+                    
+        <h3 style="text-decoration: underline; padding: 25px;">Our connected Hospitals</h3>
+        <br>
+
+        <div class="card_box2">
+            
+            <div class="card" style="width: 400px;">
+                <img src="Hos1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Pioneer Medical Care</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                    <span>4.5</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sanjeevni Hospital</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>4.5</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Infinity Healthcare<br> and Emergency Care</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4.1</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bharatam University <br>of Medical Sciences.</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i><span>4.0</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Medivista Healthcare</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>3.9</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Arogya Kendra and<br> Emergency Hospital</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>3.8</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos7.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HopeString Healthcare<br> Institute</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>3.7</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            <div class="card" style="width: 400px;">
+                <img src="Hos8.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sukoon Hospital</h5>
+                  <p class="card-text"><i class="fa-brands fa-google"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><i class="fa-regular fa-star"></i><span>3.6</span></p>
+                  <a href="#" class="btn btn-primary"><i class="fa-solid fa-location-crosshairs" style="padding-right: 8px;"></i>View Location</a>
+                </div>
+            </div>
+            
+        </div>
+
+        <br>
+        <br>
+
+        <h3 style="text-decoration: underline; padding: 25px;">Real Stories Marking Our SUCCESS</h3>
+        <br>
+
+        <div class="container1">
+            <div class="card" style="width: 23rem;">
+                <img style="height:270px;" src="card1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">A Miraculous Recovery from a Ruptured Brain Aneurysm</h5>
+                  <p class="card-Text">When 29-year-old Mrs. Priya Verma collapsed suddenly at work, she was airlifted to our hospital with a ruptured brain aneurysm—a life-threatening condition that required immediate intervention. Within minutes, a multidisciplinary team of neurologists, neurosurgeons, and critical care specialists convened in our state-of-the-art neuro-ICU.
+    
+                    Advanced imaging technology pinpointed the rupture, and an emergency endovascular coiling procedure was performed. Throughout the surgery, the anesthesiology team ensured precise monitoring, while skilled nurses worked tirelessly to maintain stability. Post-surgery, Priya received exceptional rehabilitation care, including physiotherapy and speech therapy, to regain full functionality.
+                    
+                    Thanks to cutting-edge facilities and flawless teamwork, Priya made a full recovery—defying the odds. Her story reflects the expertise, innovation, and dedication that define our hospital.</p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 23rem;">
+                <img style="height:270px;" src="card2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">A Story of Win Over a Life-Threatening Sepsis Case</h5>
+                  <p class="card-Text">When 55-year-old Mr. Arun Patel was admitted to our hospital with severe sepsis due to a rare infection, his condition was critical. His blood pressure was dangerously low, and his organs were failing. Our expert team of intensivists, infectious disease specialists, and critical care nurses quickly sprang into action, administering broad-spectrum antibiotics and using advanced life-support systems.
+    
+                    The collaborative efforts between the doctors and nurses were seamless. While the doctors monitored his response to treatment, the nursing team ensured his comfort, administering fluids, pain management, and close monitoring of his vital signs. Within 48 hours, Mr. Patel showed signs of recovery, and after a week in the ICU, he was stable enough to be transferred to a regular ward.
+                    
+                    Thanks to the advanced medical technology and dedicated teamwork at our hospital, Mr. Patel made a full recovery. His case highlights our ability to handle even the most critical and rare conditions with precision and care.</p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+        </div>
+    
+    
+        <div class="container2">
+            <div class="card" style="width: 23rem;">
+                <img style="height:270px;" src="card3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">A Triumph Over Critical Multi-Organ Failure</h5>
+                  <p class="card-Text">When 38-year-old Mrs. Shalini Rao was rushed to our hospital with severe multi-organ failure due to a rare and aggressive autoimmune disorder, her condition was life-threatening. Her kidneys, liver, and heart were all failing, and her blood pressure was dangerously low. The situation was critical, but our hospital’s exceptional medical team sprang into action immediately.
+    
+                    Our team of intensivists, nephrologists, cardiologists, and hematologists collaborated tirelessly. Advanced dialysis was initiated to support her kidneys, while a heart-lung machine was used to stabilize her cardiovascular function. Simultaneously, our nurses provided round-the-clock care, carefully monitoring her vital signs, administering fluids, and ensuring she was comfortable during the intensive treatment process.
+                    
+                    In addition to life-saving treatments, Shalini received specialized care using the latest technology available, including continuous blood filtration systems and advanced ventilators. Within a few days, her condition started stabilizing. The combination of personalized care, rapid intervention, and the use of cutting-edge facilities helped Mrs. Rao make a miraculous recovery.
+                    
+                    Thanks to the unwavering dedication of our doctors and nursing team, along with our hospital’s state-of-the-art resources, Shalini is now fully recovered, showcasing the power of teamwork in saving lives in the most critical of circumstances.</p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+    
+              <div class="card" style="width: 23rem;">
+                <img style="height:270px;" src="card4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Patient Surviving a Rare Heart Condition</h5>
+                  <p class="card-Text">When 45-year-old Mr. Raghav Mehta was rushed to our hospital with an acute case of aortic dissection, a rare and life-threatening condition where the main artery tears, our team knew time was of the essence. Our expert cardiothoracic surgeons, intensivists, and emergency care nurses worked in perfect harmony to stabilize him.
+    
+                    Using advanced imaging technology, the team quickly identified the extent of the dissection and immediately began surgery to repair the tear. Throughout the procedure, our nursing staff provided meticulous support, monitoring vital signs, and managing anesthesia. Post-surgery, Mr. Mehta was placed in our state-of-the-art ICU where round-the-clock care and continuous monitoring ensured his recovery.
+                    
+                    Thanks to the seamless collaboration between our medical and nursing teams and the use of cutting-edge medical facilities, Mr. Mehta made a remarkable recovery. His case demonstrates how our hospital's expertise and state-of-the-art technology can save lives in even the most critical and rare conditions.</p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+        </div>
+    
+    
+        <div class="container3">
+            <div class="card" style="width: 23rem;">
+                <img style="height:270px;" src="card5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Overcoming a Life-Threatening Pulmonary Embolism</h5>
+                  <p class="card-Text">When 50-year-old Mrs. Neelam Singh was admitted with a massive pulmonary embolism—a rare and life-threatening blockage in the lungs’ arteries—her chances of survival were slim. The hospital's emergency team, led by expert pulmonologists, intensivists, and cardiologists, worked seamlessly together. Advanced imaging technology immediately identified the clot, and within minutes, a personalized treatment plan was initiated.
+    
+                    Our nursing staff played a crucial role in supporting the treatment, closely monitoring her vitals and administering blood thinners while ensuring she remained stable. Using our state-of-the-art clot-busting technology and advanced life support systems, the team successfully dissolved the embolism, stabilizing her condition.
+                    
+                    After a few days of intensive care and continuous monitoring, Mrs. Singh made a full recovery. This success highlights our hospital’s ability to handle even the most critical and rare cases with exceptional collaboration and cutting-edge facilities.</p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div>
+    
+              <!-- <div class="card" style="width: 23rem;">
+                <img style="height:270px;" src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-Text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">View More</a>
+                </div>
+              </div> -->
+        </div>
+        <script>
+            document.querySelectorAll('.btn.btn-primary').forEach(button => {
+                button.addEventListener('click', function(event) {
+                    event.preventDefault();
+    
+                    const cardBody = this.parentElement;
+                    const title = cardBody.querySelector('.card-title');
+                    const text = cardBody.querySelector('.card-Text');
+    
+                    if (text.style.display === 'none' || text.style.display === '') {
+                        text.style.display = 'block';
+                        // title.style.display = 'none';
+                        this.textContent = 'View Less';
+                    } else {
+                        text.style.display = 'none';
+                        title.style.display = 'block';
+                        this.textContent = 'View More';
+                    }
+                });
+            });
+        </script>
+
+        <br>
+        <br>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-column">
+                    <h3>For Patients</h3>
+                    <ul>
+                        <li><a href="#">Find a Doctor</a></li>
+                        <li><a href="#">Book an Appointment</a></li>
+                        <li><a href="#">Video Consultation</a></li>
+                        <li><a href="#">Treatments</a></li>
+                        <li><a href="#">Emergency 24x7</a></li>
+                        <li><a href="#">Max Lab</a></li>
+                        <li><a href="#">Max @ Home</a></li>
+                        <li><a href="#">Health Checkup Plans</a></li>
+                        <li><a href="#">Immigration Services</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Doctor Videos</a></li>
+                        <li><a href="#">Patient Testimonials</a></li>
+                        <li><a href="#">Health Calculators</a></li>
+                        <li><a href="#">Radiology Instruction Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>International Patients</h3>
+                    <ul>
+                        <li><a href="#">Request an Appointment</a></li>
+                        <li><a href="#">Get an Opinion</a></li>
+                    </ul>
+                   
+                </div>
+                <div class="footer-column">
+                    <h3>Academics</h3>
+                    <ul>
+                        <li><a href="#">Academics</a></li>
+                        <li><a href="#">Academics - Doctors</a></li>
+                        <li><a href="#">Academics - Certificates</a></li>
+                        <li><a href="#">DNB Programmes</a></li>
+                        <li><a href="#">Fellowship Programmes</a></li>
+                        <li><a href="#">American Heart Association Courses</a></li>
+                        <li><a href="#">Nursing/Allied Healthcare</a></li>
+                        <li><a href="#">Bespoke Trainings</a></li>
+                        <li><a href="#">Our Alumni</a></li>
+                        <li><a href="#">Observerships</a></li>
+                    </ul>
+                   
+                </div>
+               
+                <!-- Add other columns as needed -->
+            </div>
+            <div class="footer-column">
+                <h3>Education</h3>
+                <ul>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Degree Courses</a></li>
+                    <li><a href="#">Diploma Courses</a></li>
+                    <li><a href="#">Certificate Courses</a></li>
+                </ul>
+                </div>
+           
+            <div class="footer-content">
+                <!-- Existing columns like For Patients, International Patients, Academics, etc. -->
+                <!-- New sections start here -->
+                <!-- <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Survey</p>
+                    <p>The Max Medical Journal</p>
+                    <p>+91 93550 20370</p>
+                </div> -->
+                <div class="footer-section download-app">
+                    <h3>Download App</h3>
+                    <a class="icon" style="margin-right:5px;" href="#"><i class="fa-brands fa-google-play"></i></a>
+                    <a class="icon" style="margin-right:5px;" href="#"><i class="fa-brands fa-app-store-ios"></i></a>
+                </div>
+                <div class="footer-section follow-us">
+                    <h3>Follow Us On</h3>
+                    <a class="icon" style="margin-right:4px;" href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a class="icon" style="margin-right:4px;" href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a class="icon" style="margin-right:4px;" href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="icon" style="margin-right:4px;" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="icon" style="margin-right:4px;" href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="footer-section hospital-info">
+                    <h3>Our Hospital Named</h3>
+                    <p>Arogyam Healthcare, A hospital based with aim of Providing best healthcare facilities<br> and premium services </p>
+                    <p>It's a bockchain based hospital aimed to thrive progress</p>
+                    <p>Copyrights reserved under construction of this website</p>
+                </div>
+                <div class="footer-section search-box">
+                    <input type="text" placeholder="Search for Doctor, Hospital. etc." style="background-color: rgb(211, 211, 211); color:black   ;">
+                    <button style="background-color: lightblue; color:black;">SEARCH</button>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:+1800111111">Contact: +1800 111 XXX</a>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">HR Compliances</a> |
+                    <a href="#">Labour Compliances</a> |
+                    <a href="#">Donor Information</a> |
+                    <a href="#">Environmental Clearances</a> |
+                    <a href="#">Environmental Policy</a> |
+                    <a href="#">Bio Medical Report</a> |
+                    <a href="#">Disclaimer</a> |
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <!-- <div class="footer-pricing">
+                    <a href="#">Stent Price</a>
+                    <a href="#">Knee Implant Pricing</a>
+                </div> -->
+                <div class="footer-advisory">
+                    <p>Advisory Notice: 1. Lately, unauthorized individuals have attempted to make fraudulent representations of Max Hospitals, using fake numbers to solicit private information and swindle money from unsuspecting and innocent individuals. Please note that Max Hospitals never solicit information such as bank details or payment authorization on any link. We request you to be careful when sharing any sensitive information or clicking on unverified links. Arogyam Healthcare never charges any money for job opportunities. Beware of any fraudulent individuals or agencies making such offers, and always verify information with official sources.</p>
+                </div>
+                <div class="footer-contact">
+                    <p>Recaptcha Policy | Recaptcha Terms</p>
+                    <p>© Arogyam Healthcare, 2024. All rights reserved.</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 92688 XXXXX</p>
+                </div>
+            </div>
+            
+        </footer>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
